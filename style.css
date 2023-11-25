@@ -1,0 +1,54 @@
+body {
+    font-family: Roboto-Regular, sans-serif;
+    font-size: 16px;
+}
+
+input {
+    outline: none;
+    display: block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+#mainField {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+#display {
+    display: flex;
+    background-color: red;
+}
+
+#operators {
+    flex-grow: 0;
+}
+
+#values {
+    display: grid;
+    flex-grow: 1;
+    background-color: green;
+}
+
+.val {
+    background-color: cadetblue;
+}
+
+#utilisation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.btn {
+    padding: 0.7em 0.9em;
+    font-size: 27px;
+}
