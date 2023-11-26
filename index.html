@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="font/Roboto-Regular.ttf" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="import" href="font/Roboto-Regular.ttf">
     <title>Document</title>
 </head>
 <body>
@@ -12,41 +12,41 @@
         <div id="mainFrame">
             <div id="display">
                 <div id="operators">
-                    <div id="add">+</div>
-                    <div id="sous">-</div>
-                    <div id="div">/</div>
-                    <div id="mult">*</div>
+                    <div class="oper" id="add" >+</div>
+                    <div class="oper" id="sous" >-</div>
+                    <div class="oper" id="div" >/</div>
+                    <div class="oper" id="mult" >*</div>
                 </div>
                 <div id="values">
-                    <div clas="val">
+                    <div class="val">
                         <input type="number" id="val1" placeholder="value one">
                     </div>
                     <div class="val">
-                        <input type="number" id="val2" placeholder="value two">
+                        <input type="number" id="val2" placeholder="value two" maxlength="20">
                     </div>
                     <div class="val">
-                        <input type="number" id="resultat" placeholder="resultat" readonly>
+                        <input  id="resultat" placeholder="resultat" readonly>
                     </div>
                 </div>
 
             </div>
             <div id="utilisation">
-                <button class="btn" id="number7" value="7">7</button>
-                <button class="btn" id="number8" value="8">8</button>
-                <button class="btn" id="number9" value="9">9</button>
-                <button class="btn" id="operAdd" value="+">+</button>
-                <button class="btn" id="number4" value="4">4</button>
-                <button class="btn" id="number5" value="5">5</button>
-                <button class="btn" id="number6" value="6">6</button>
-                <button class="btn" id="operSous" value="-">-</button>
-                <button class="btn" id="number1" value="1">1</button>
-                <button class="btn" id="number2" value="2">2</button>
-                <button class="btn" id="number3" value="3">3</button>
-                <button class="btn" id="operDiv" value="/">/</button>
-                <button class="btn" id="number0" value="0">0</button>
-                <button class="btn" id="equal" value="=">=</button>
-                <button class="btn" id="clean" value="C">C</button>
-                <button class="btn" id="operMult" value="*">*</button>
+                <button class="btn" id="number7">7</button>
+                <button class="btn" id="number8">8</button>
+                <button class="btn" id="number9">9</button>
+                <button class="btn" id="operAdd">+</button>
+                <button class="btn" id="number4">4</button>
+                <button class="btn" id="number5">5</button>
+                <button class="btn" id="number6">6</button>
+                <button class="btn" id="operSous">-</button>
+                <button class="btn" id="number1">1</button>
+                <button class="btn" id="number2">2</button>
+                <button class="btn" id="number3">3</button>
+                <button class="btn" id="operDiv">/</button>
+                <button class="btn" id="number0">0</button>
+                <button class="btn" id="equal">=</button>
+                <button class="btn" id="clean">C</button>
+                <button class="btn" id="operMult">*</button>
             </div>
         </div>
     </div>

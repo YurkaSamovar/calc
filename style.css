@@ -1,3 +1,7 @@
+:root {
+    --marginMin: -3px;
+}
+
 body {
     font-family: Roboto-Regular, sans-serif;
     font-size: 16px;
@@ -6,10 +10,11 @@ body {
 input {
     outline: none;
     display: block;
-    border: 1px solid black;
+    border: none;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+    font-size: 18px;
 }
 #mainField {
     width: 100%;
@@ -22,33 +27,107 @@ input {
     align-content: center;
     justify-content: center;
     overflow: auto;
+    background: linear-gradient(90deg, #f598a8, #ECE3CE);
 }
 
 #display {
     display: flex;
-    background-color: red;
 }
 
 #operators {
+    background-color: #DDF2FD;
+    color: #DDF2FD;
     flex-grow: 0;
+    border: 5px solid #164863;
+    border-right: none;
+    border-top-left-radius: 20px;
+}
+
+.oper {
+    font-size: 25px;
+    margin: 5px 6px;
+    line-height: 0.8;
+}
+
+.oper[select] {
+    color: black;
+    animation-name: changeColor;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+
+    85% {
+        color: black;
+    }
+    100% {
+        color: #00564d;
+    }
+
 }
 
 #values {
     display: grid;
     flex-grow: 1;
-    background-color: green;
 }
 
 .val {
-    background-color: cadetblue;
+    border: 5px solid #164863;
+    padding-left: 10px;
+    background-color: white;
+}
+
+#values .val:first-child {
+    border-bottom: none;
+    border-top-right-radius: 20px;
+}
+
+#val1 {
+    border-top-right-radius: 20px;
+}
+
+#values .val:last-child {
+    border-top: none;
 }
 
 #utilisation {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #164863;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
 }
 
 .btn {
-    padding: 0.7em 0.9em;
+    padding: 0.6em 0.8em;
     font-size: 27px;
+    box-sizing: border-box;
+    background-color: #DDF2FD;
+    border: 5px solid #164863;
+    margin-right: var(--marginMin);
+    margin-bottom: var(--marginMin);
+}
+
+#operAdd, #operDiv, #operSous, #operMult {
+    margin-right: 0;
+}
+
+#number0, #equal, #clean, #operMult {
+    margin-bottom: 0;
+}
+
+#number0 {
+    border-bottom-left-radius: 20px;
+}
+
+#operMult {
+    border-bottom-right-radius: 20px;
+}
+
+.btn:hover {
+    background: none;
+    background-color: #00a2fd;
 }
