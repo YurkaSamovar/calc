@@ -41,6 +41,7 @@ input {
     border: 5px solid #164863;
     border-right: none;
     border-top-left-radius: 20px;
+    user-select: none;
 }
 
 .oper {
@@ -51,21 +52,6 @@ input {
 
 .oper[select] {
     color: black;
-    animation-name: changeColor;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes changeColor {
-
-    85% {
-        color: black;
-    }
-    100% {
-        color: #00564d;
-    }
-
 }
 
 #values {

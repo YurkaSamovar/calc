@@ -18,6 +18,7 @@ for (let btn of btns) {
 function executer() {
     switch (selectBtn.textContent) {
         case "+": case "-": case "/": case "*":
+            if(resultat.value != "") break;
             if(val1.value != "") {
                 if(selectOper != null)
                     mapOper.get(selectOper.textContent).removeAttribute("select");
