@@ -106,7 +106,6 @@ input {
     font-size: 27px;
     box-sizing: border-box;
     background-color: #DDF2FD;
-    border: 5px solid #164863;
     margin-right: var(--marginMin);
     margin-bottom: var(--marginMin);
 }

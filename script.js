@@ -41,6 +41,7 @@ function executer() {
         case "=":
             if(val1.value != "" && val2.value != "") {
                 resultat.value = getResultat();
+                selectVal = null;
             }
             break;
         case "C":
@@ -66,24 +67,13 @@ function getResultat() {
 function restore() {
     selectVal = val1;
     selectBtn = null;
-    mapOper.get(selectOper.textContent).removeAttribute("select");
+    if(selectOper != null)
+        mapOper.get(selectOper.textContent).removeAttribute("select");
     selectOper = null;
     val1.value = "";
     val2.value = "";
     resultat.value = "";
 }
 
-function getOperElement() {
-    switch (selectOper.value) {
-        case "+":
-
-        case "-":
-
-        case "/":
-
-        case "*":
-
-    }
-}
 
 
